@@ -1,4 +1,4 @@
-# Group Comparison in Quantitative Research Using R (T-test)
+# Part 1- Group Comparison in Quantitative Research Using R (T-test)
 
 <span style="font-size: 22px;">__Teaching Team__</span>
  

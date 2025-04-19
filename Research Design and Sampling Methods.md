@@ -84,7 +84,7 @@
 
 
 
-## 2. Control and Manipulation:
+## 2. Control and Manipulation
 In **experimental designs**, researchers **control and manipulate** variables to establish **cause-and-effect relationships**.
 
 This involves:  
@@ -95,7 +95,7 @@ This involves:
 
 ---
 
-## 3. Validity and Reliability:
+## 3. Validity and Reliability
 Ensuring the study's **validity** (*accuracy of the results*) and **reliability** (*consistency of the results*) is crucial.
 
 This involves:  

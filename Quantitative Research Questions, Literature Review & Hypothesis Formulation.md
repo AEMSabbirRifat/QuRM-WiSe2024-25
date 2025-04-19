@@ -241,3 +241,23 @@ Aspects of Hypothesis Formulation
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ_CD0Yz6l4?si=-cpc5mZIFYdIEhde" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+# Communication
+
+To stay in touch and communicate effectively, we will be using **Nextcloud Talk**.
+
+- **Apple Store:** [Nextcloud Talk (iOS)](https://apps.apple.com/de/app/nextcloud-talk/id1296825574?l=en-GB)
+- **Google Play Store:** [Nextcloud Talk (Android)](https://play.google.com/store/apps/details?id=com.nextcloud.talk2&hl=en)
+
+
+
+We will be using the following group link for discussions and collaboration:
+
+- **Group 1** [Collaboration During The Class](https://cloud.ovgu.de/call/ra65w6ie)
+- **Group 2** [General Queries outside The Class](https://cloud.ovgu.de/call/ciz2te64)
+
+
+
+<span style="background-color: yellow; padding: 3px;">__Make sure to install the app and join the groups to stay updated and participate in discussions.__</span>
+
+

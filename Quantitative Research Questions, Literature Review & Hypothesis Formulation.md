@@ -182,6 +182,27 @@ https://ohiostate.pressbooks.pub/swk3401/chapter/module-3-chapter-4-overview-of-
 **<span style="color:blue">Task: Now convert the bad research questions to good research questions with the help of AI (any LLM).</span>**
 
 
+# Task 1: From Topic to Research Question
+
+**Time:** 15 minutes  
+
+**Goal:** Practice narrowing a general interest area into a clear quantitative research question.
+
+
+**Instructions:**
+
+
+1. Choose one broad research topic from this list or create your own:
+
+   - AI use & academic performance among ITVET students
+   - Satisfaction with online learning platforms in vocational training
+   - Student productivity in blended (online and in-person) session settings
+
+2. Reframe the topic into one focused quantitative research question, following this structure:  
+
+   *"What is the relationship between [independent variable] and [dependent variable] in [target population]?"*
+
+
 # Literature Review 
 
 {{1}}
@@ -201,6 +222,26 @@ The Essential Aspects of Literature Review
 {{4}}
 
 https://libguides.brown.edu/organize/litreview
+
+
+# Task 2: Fast & Focused Literature Hunt
+
+**Time:** 20 minutes  
+
+**Goal:** Build awareness of the importance and feasibility of a literature review.
+
+
+**Instructions:**
+
+
+1. Find 2–3 peer-reviewed journal articles (Google Scholar, ResearchGate or library portal) related to the research question you formed.
+
+2. For each article, create a reference in bibTeX notation with chatGPT:  
+
+   - Title & author  
+   - What variables were studied  
+   - The population/sample used  
+   - What kind of results or data they reported  
 
 
 # Hypothesis Formulation 
@@ -242,6 +283,27 @@ Aspects of Hypothesis Formulation
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XZ_CD0Yz6l4?si=-cpc5mZIFYdIEhde" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
+# Task 3: Hypothesis Challenge  
+
+**Time:** 12 minutes  
+
+**Goal:** Formulate testable hypotheses based on research questions.  
+
+**Instructions:**  
+
+
+1. Based on your research question and insights from literature, write:  
+
+   - One null hypothesis **(H₀)** 
+   - One alternative hypothesis **(H₁)**  
+
+2. Be ready to explain:  
+
+   - What kind of variables you're using (*continuous, categorical?*)  
+   - Whether it's a correlation, comparison, or prediction  
+
+
 # Communication
 
 To stay in touch and communicate effectively, we will be using **Nextcloud Talk**.
@@ -260,4 +322,44 @@ We will be using the following group link for discussions and collaboration:
 
 <span style="background-color: yellow; padding: 3px;">__Make sure to install the app and join the groups to stay updated and participate in discussions.__</span>
 
+
+# Session Evaluation
+
+This is an evaluation form to gather feedback on your self-study session. Please take a few minutes to answer the following questions.
+
+
+1. What was the most interesting thing you learned during this self-study session?
+
+    [[___ ___ ___]]
+
+2. Do you feel confident understanding all the key concepts now?
+
+    [[___ ___ ___]]
+
+3. Were the instructions and exercises clear? If not, what was unclear?
+
+    [[___ ___ ___]]
+
+4. Which part of the topic did you find most challenging, and why?
+
+    [[___ ___ ___]]
+
+5. How confident do you feel about applying what you learned in future exercises or research?
+
+    [[___ ___ ___]]
+
+6. What resources or support would have helped you better understand the topic?
+
+    [[___ ___ ___]]
+
+7. How did self-studying this topic compare to learning it in a regular lecture format?
+
+    [[___ ___ ___]]
+
+8. What suggestion would you offer to improve future self-study materials?
+
+    [[___ ___ ___]]
+
+
+__**Thank you for completing this evaluation! For improving future self-study materials, your feedback is valuable to us.**__
 

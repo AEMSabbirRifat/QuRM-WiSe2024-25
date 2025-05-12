@@ -113,6 +113,26 @@ This involves:
 </div>
 
 
+## 🔹 Task 1: Identify the Research Design
+
+**Duration: 10 minutes**
+
+**“Which designs are best suited for testing causal relationships, and why?”**
+
+📄 Scenarios:
+
+1.	Scenario A:
+In a clinical trial, participants are randomly assigned to receive either a new memory-enhancing drug or a placebo. Their performance on a memory test is compared after 8 weeks.
+
+2.	Scenario B:
+A researcher conducts a nationwide survey to summarize the average working hours and job satisfaction levels of remote employees in Germany.
+
+3.	Scenario C:
+A school introduces a new digital learning tool to one class, while another class continues with traditional methods. The classes were not randomly assigned but their final exam scores are compared.
+
+4.	Scenario D:
+A study explores whether there's a relationship between students' daily caffeine intake and their academic performance across several universities.
+
 # Sampling Methods
 
 ## Concept of Sampling
@@ -167,6 +187,60 @@ This involves:
 - **Determine an appropriate sample size**
 - **Calculate a sample size**
 - **Consider practical constraints**
+
+
+## 🔹 Task 2- Sampling Procedures Quiz
+
+**Duration: 8 minutes** 
+
+
+**1. Which sampling method involves selecting every k-th element from a population?**
+
+- [( )] a: Stratified Sampling  
+- [(X)] b: Systematic Sampling  
+- [( )] c: Snowball Sampling  
+
+---
+
+ 
+**2. What type of sampling is "Quota Sampling" classified as?**
+
+
+- [( )] a: Probability Sampling  
+- [(X)] b: Non-probability Sampling  
+- [( )] c: Random Sampling  
+
+---
+
+
+**3. Which method divides the population into homogeneous subgroups before sampling?**
+
+
+- [( )] a: Cluster Sampling  
+- [(X)] b: Stratified Sampling  
+- [( )] c: Convenience Sampling  
+
+---
+
+
+**4. "Snowball Sampling" is most useful when:**
+
+
+- [( )] a: You need perfectly representative samples  
+- [(X)] b: The population is hard to reach or identify  
+- [( )] c: You have a complete sampling frame  
+
+---
+
+
+**5. What is the main characteristic of "Simple Random Sampling"?**
+
+- [(X)] a: Every member has an equal chance of being selected  
+- [( )] b: Researchers use their judgment to select samples  
+- [( )] c: Samples are taken from convenient locations  
+
+---
+
 
 # Practical Exercise (30 minutes)
 

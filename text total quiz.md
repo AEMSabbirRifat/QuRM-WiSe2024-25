@@ -8,95 +8,23 @@ comment: MCQ Quiz with Score Calculation
 @hidden
 <script>
 // Initialize score
-let quiz_score = 0;
+window.quiz_score = 0;
 
-// Track answers
-let answers = {
-  q1: "",
-  q2: "",
-  q3: "",
-  q4: "",
-  q5: ""
-};
-
-// Correct answers
-const correct_answers = {
+// Define correct answers
+window.correct_answers = {
   q1: "a",
-  q2: "d",
+  q2: "d", 
   q3: "e",
   q4: "d",
   q5: "e"
 };
-
-// Calculate score
-function calculateScore() {
-  quiz_score = 0;
-  if(answers.q1 === correct_answers.q1) quiz_score++;
-  if(answers.q2 === correct_answers.q2) quiz_score++;
-  if(answers.q3 === correct_answers.q3) quiz_score++;
-  if(answers.q4 === correct_answers.q4) quiz_score++;
-  if(answers.q5 === correct_answers.q5) quiz_score++;
-  
-  return quiz_score;
-}
-
-// Save answer
-function saveAnswer(question, answer) {
-  answers[question] = answer;
-}
-</script>
-
-@saveQ1: @input
-<script>
-saveAnswer("q1", "@input");
-</script>
-
-@saveQ2: @input
-<script>
-saveAnswer("q2", "@input");
-</script>
-
-@saveQ3: @input
-<script>
-saveAnswer("q3", "@input");
-</script>
-
-@saveQ4: @input
-<script>
-saveAnswer("q4", "@input");
-</script>
-
-@saveQ5: @input
-<script>
-saveAnswer("q5", "@input");
-</script>
-
-@results
-<script>
-let score = calculateScore();
-let message = "";
-
-if(score === 5) {
-  message = "Excellent! You got all answers correct!";
-} else if(score >= 3) {
-  message = "Good job! You did well on this quiz.";
-} else {
-  message = "Keep practicing! You can do better.";
-}
-
-send.liascript(`
-### Final Score
-**Your final score is: ${score}/5**
-
-${message}
-`);
 </script>
 
 # Quiz: Question Type Examples
 
 **Instructions:**
 - Answer each question by selecting one option.
-- Submit your answer for each question.
+- After answering all questions, click the "Submit Quiz" button.
 - You will get 1 point for each correct answer.
 - Your final score will be displayed at the end.
 
@@ -106,8 +34,6 @@ ${message}
 [(a)] a. Yes
 [(b)] b. No
 
-@saveQ1  
-
 ## Question 2
 **"Which of the following devices do you own?"**
 
@@ -115,8 +41,6 @@ ${message}
 [(b)] b. Tablet
 [(c)] c. Laptop
 [(d)] d. Desktop
-
-@saveQ2  
 
 ## Question 3
 **"What is your age group?"**
@@ -127,8 +51,6 @@ ${message}
 [(d)] d. 35-44
 [(e)] e. 45+
 
-@saveQ3  
-
 ## Question 4
 **"What is your favourite social media platform?"**
 
@@ -136,8 +58,6 @@ ${message}
 [(b)] b. Instagram
 [(c)] c. Twitter
 [(d)] d. LinkedIn
-
-@saveQ4  
 
 ## Question 5
 **"How satisfied are you with our customer service?"**
@@ -148,9 +68,39 @@ ${message}
 [(d)] d. Dissatisfied
 [(e)] e. Very Dissatisfied
 
-@saveQ5  
-
 ## Submit Quiz
-Click the button below to see your results:
 
-<button onclick="eval(`@results`)">Submit Quiz</button>
+<div>
+<lia-btn text="Submit Quiz" click="eval('calculateScore()')"></lia-btn>
+</div>
+
+<script>
+function calculateScore() {
+  window.quiz_score = 0;
+  
+  // Check answers
+  if(document.getElementsByName("q1")[0].checked && "a" === window.correct_answers.q1) window.quiz_score++;
+  if(document.getElementsByName("q2")[3].checked && "d" === window.correct_answers.q2) window.quiz_score++;
+  if(document.getElementsByName("q3")[4].checked && "e" === window.correct_answers.q3) window.quiz_score++;
+  if(document.getElementsByName("q4")[3].checked && "d" === window.correct_answers.q4) window.quiz_score++;
+  if(document.getElementsByName("q5")[4].checked && "e" === window.correct_answers.q5) window.quiz_score++;
+  
+  // Display result
+  let message = "";
+  if(window.quiz_score === 5) {
+    message = "Excellent! You got all answers correct!";
+  } else if(window.quiz_score >= 3) {
+    message = "Good job! You did well on this quiz.";
+  } else {
+    message = "Keep practicing! You can do better.";
+  }
+  
+  // Show results
+  send.liascript(`
+  ### Final Score
+  **Your final score is: ${window.quiz_score}/5**
+
+  ${message}
+  `);
+}
+</script>

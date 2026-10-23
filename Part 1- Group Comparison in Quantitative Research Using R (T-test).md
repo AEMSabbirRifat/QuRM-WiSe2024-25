@@ -70,7 +70,7 @@ Group comparison in quantitative research refers to the statistical methods used
 ## Types of Comparison Methods
 
 <div style="text-align: center;">
-  <img src="https://raw.githubusercontent.com/AEMSabbirRifat/QuRM-Sabbir-/97cf7d5d07315d817559561f306ead3e6dcfa1a7/media/Group%20Comparison%20in%20Quantitative%20Research%20Using%20R%20(T-test)/Picture1.jpg" alt="Group Comparison Image" width="50%">
+  <img src="https://raw.githubusercontent.com/OVGU-VET-TechEd/Quantitative_Methods_with_R/e2f8eecfb1e53a5bb58868917964b972efde2001/Media_week7/Picture1.jpg" alt="Group Comparison Image" width="50%">
 </div>
 
 
@@ -105,7 +105,7 @@ T-tests are used to **compare means between groups** to determine if differences
 ## Types of T-tests
 
 <div style="text-align: center;">
-  <img src="https://raw.githubusercontent.com/AEMSabbirRifat/QuRM-Sabbir-/97cf7d5d07315d817559561f306ead3e6dcfa1a7/media/Group%20Comparison%20in%20Quantitative%20Research%20Using%20R%20(T-test)/Picture2.jpg" alt="Group Comparison Image" width="50%">
+  <img src="https://raw.githubusercontent.com/OVGU-VET-TechEd/Quantitative_Methods_with_R/e2f8eecfb1e53a5bb58868917964b972efde2001/Media_week7/Picture2.jpg" alt="Group Comparison Image" width="50%">
 </div>
 
 
@@ -121,8 +121,70 @@ T-tests are used to **compare means between groups** to determine if differences
 
 
 ## One-Sample T-test in R
+
+**Question:** Do cars in the built-in `mtcars` dataset average a fuel economy different from 20 miles per gallon?
+
+- **H₀:** The mean `mpg` equals 20.
+- **H₁:** The mean `mpg` differs from 20 (significance level 5%).
+
+```r
+data(mtcars)
+
+# Assumption: the variable is roughly normally distributed
+shapiro.test(mtcars$mpg)        # p > .05 -> no evidence against normality
+
+# One-sample t-test against the known value 20
+t.test(mtcars$mpg, mu = 20)
+```
+
+**Read the output:** look at `t`, `df`, the `p-value` and the 95% confidence interval. If the interval contains 20 and p > .05, we cannot reject H₀.
+
 ## Two-Sample T-test (Independent T-test) in R
+
+**Question:** Do cars with manual transmission (`am = 1`) have a different mean `mpg` than automatic cars (`am = 0`)?
+
+- **H₀:** Mean `mpg` is equal in both groups.
+- **H₁:** Mean `mpg` differs between the groups (significance level 5%).
+
+```r
+data(mtcars)
+mtcars$am <- factor(mtcars$am, labels = c("automatic", "manual"))
+
+# Assumption 1: normality within each group
+by(mtcars$mpg, mtcars$am, shapiro.test)
+
+# Assumption 2: homogeneity of variance
+var.test(mpg ~ am, data = mtcars)
+
+# Welch t-test (R's default, robust when variances differ)
+t.test(mpg ~ am, data = mtcars)
+
+# Student t-test, only if variances are equal
+t.test(mpg ~ am, data = mtcars, var.equal = TRUE)
+
+boxplot(mpg ~ am, data = mtcars, ylab = "Miles per gallon")
+```
+
 ## Paired T-test (Dependent T-test) in R
+
+**Question:** The built-in `sleep` dataset measures extra hours of sleep for the **same 10 patients** under two drugs. Do the drugs differ in effect?
+
+- **H₀:** The mean difference between drug 1 and drug 2 is 0.
+- **H₁:** The mean difference is not 0 (significance level 5%).
+
+```r
+data(sleep)
+drug1 <- sleep$extra[sleep$group == 1]
+drug2 <- sleep$extra[sleep$group == 2]
+
+# Assumption: the differences are roughly normally distributed
+shapiro.test(drug1 - drug2)
+
+# Paired t-test (each patient is compared with themselves)
+t.test(drug1, drug2, paired = TRUE)
+```
+
+**Tip:** Use a paired test whenever the same people are measured twice (before/after, two conditions). Treating paired data as independent wastes statistical power.
 
 
 # Practical Exercise

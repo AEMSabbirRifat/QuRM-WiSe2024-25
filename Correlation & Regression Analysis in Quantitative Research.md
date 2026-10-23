@@ -1,6 +1,6 @@
 <!--
 author:  Sabbir
-email:   a.rifat@ovgu.de
+email:   a.e.m.sabbirrifat@gmail.com
 version:  0.1.0
 language: en
 comment:  A presentation on Correlation & Regression Analysis in Quantitative Research Using R
@@ -107,6 +107,24 @@ For valid correlation analysis, these conditions should be met:
 
 **_For statistical analysis, please follow the instructions given through R_**
 
+```r
+# Example R code for correlation analysis
+data(airquality)
+
+# Visual check first: is the relationship roughly linear?
+plot(airquality$Temp, airquality$Ozone,
+     xlab = "Temperature (°F)", ylab = "Ozone (ppb)")
+
+# Pearson correlation (linear relationship, interval data)
+# Rows with missing Ozone values are dropped automatically
+cor.test(airquality$Ozone, airquality$Temp, method = "pearson")
+
+# Spearman correlation (monotonic relationship, ordinal or non-normal data)
+cor.test(airquality$Ozone, airquality$Temp, method = "spearman", exact = FALSE)
+```
+
+**Read the output:** `cor` is the coefficient (direction and strength), the `p-value` tells you whether to reject H₀ at the 5% level.
+
 
 # Regression Analysis
 
@@ -190,7 +208,7 @@ plot(model)
 
 ## Practical Exercise
 
-**Formulate and test a hypothesis using either an Independent T-test or Dependent T-test**
+**Formulate and test hypotheses using correlation and regression analysis**
 
 - Based on your dataset, create 3 hypotheses suitable for correlation and regression analysis.
 - If necessary, modify the dataset to ensure it fits the hypothesis. Justify these changes logically in your hand-in document.

@@ -1,6 +1,6 @@
 <!--
 author:   Hannes, Masub, Sabbir
-email:    hannes.tegelbeckers@ovgu.de, masub.makhdoom@ovgu.de, a.rifat@ovgu.de
+email:    hannes.tegelbeckers@ovgu.de, masub.makhdoom@ovgu.de, a.e.m.sabbirrifat@gmail.com
 version:  1.0.0
 language: en
 narrator: US English Female
@@ -13,24 +13,18 @@ import:   https://raw.githubusercontent.com/LiaScript/CodeRunner/master/README.m
 
 # Descriptive Data Analysis in R
 
-# video test
+# Video Walkthrough
 
-columns:
-  - left:
-      ### 📹 Part 1: Rapid Insight  
-      <iframe width="100%" height="315" 
-      src="https://www.youtube.com/embed/d9-JL27-sKk?autoplay=1&mute=1" 
-      title="YouTube video player" frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      allowfullscreen></iframe>
-
-  - right:
-      ### 📹 Part 2: Follow-Up Visual  
-      <iframe width="100%" height="315" 
-      src="https://www.youtube.com/embed/dvHja1SHn98?autoplay=1&mute=1" 
-      title="YouTube video player" frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      allowfullscreen></iframe>
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  <div style="flex: 1; min-width: 280px;">
+    <h3>📹 Part 1: Rapid Insight</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/d9-JL27-sKk" title="Descriptive Data Analysis in R - Part 1" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <div style="flex: 1; min-width: 280px;">
+    <h3>📹 Part 2: Follow-Up Visual</h3>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dvHja1SHn98" title="Descriptive Data Analysis in R - Part 2" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
 
 ## Introduction
 

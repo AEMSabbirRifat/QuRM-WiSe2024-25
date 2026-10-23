@@ -34,7 +34,7 @@ Group comparison in quantitative research refers to the statistical methods used
 # Overview of Group Comparison Methods
 
 <div style="text-align: center;">
-  <img src="https://github.com/AEMSabbirRifat/QuRM-Sabbir-/raw/e90eec1f9b8a39b135be76f5e965a4de4f2ab9e2/media/Group%20Comparison%20in%20Quantitative%20Research%20Using%20R%20(Part%202)/Picture1.jpg" alt="Group Comparison Image" width="50%">
+  <img src="https://raw.githubusercontent.com/OVGU-VET-TechEd/Quantitative_Methods_with_R/e2f8eecfb1e53a5bb58868917964b972efde2001/Media_week9/Picture1.jpg" alt="Group Comparison Image" width="50%">
 </div>
 
 # Parametric Tests
@@ -60,7 +60,7 @@ __ANOVA__ (Analysis of Variance) is a statistical method used to compare the mea
 # Types of Analysis of Variance (ANOVA)
 
 <div style="text-align: center;">
-  <img src="https://github.com/AEMSabbirRifat/QuRM-Sabbir-/raw/a97504babab47c887b4cb66c8c6cb36a06620703/media/Group%20Comparison%20in%20Quantitative%20Research%20Using%20R%20(Part%202)/Picture2.jpg" alt="Group Comparison Image" width="40%">
+  <img src="https://raw.githubusercontent.com/OVGU-VET-TechEd/Quantitative_Methods_with_R/e2f8eecfb1e53a5bb58868917964b972efde2001/Media_week9/Picture2.jpg" alt="Group Comparison Image" width="40%">
 </div>
 
 

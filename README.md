@@ -48,7 +48,7 @@ Each lesson ends with a **hands-on exercise**: students formulate a hypothesis o
 2. Edit any `.md` file. The [LiaScript docs](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md) explain the syntax.
 3. Open `https://liascript.github.io/course/?<raw-URL-of-your-file>` to see your version live.
 
-To export a lesson as a PDF or a SCORM package for Moodle/ILIAS, see my one-click [LiaScript export pipeline](https://github.com/AEMSabbirRifat/automation-test-1).
+To export a lesson as a PDF or a SCORM package for Moodle/ILIAS, see my one-click [LiaScript export pipeline](https://github.com/AEMSabbirRifat/liascript-export-week02).
 
 ---
 
